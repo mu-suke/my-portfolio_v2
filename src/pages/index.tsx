@@ -6,7 +6,7 @@ import { Layout } from '../components/Layout'
 const Home: NextPage = () => {
   return (
     <Layout title='Home'>
-      <Box w='100%' p={4} shadow='sm' borderWidth='1px' borderColor='gray.50'>
+      <Box w='100%' p={8} shadow='sm' borderWidth='1px' borderColor='gray.50'>
         <Center>
           <Avatar size='xl' name='Yusuke Murakami' src='./icon.png' />
         </Center>
@@ -14,25 +14,26 @@ const Home: NextPage = () => {
           color='gray.50'
           fontSize={{ base: '2xl', md: '4xl', lg: '4xl' }}
           align='center'
+          mt={4}
         >
-          (4xl) In love with React & Next
+          mu-suke.com
         </Text>
         <Text
           color='gray.50'
           fontSize={{ base: 'sm', md: 'md', lg: 'md' }}
           align='center'
         >
-          (4xl) In love with React & Next
+          Welcome to my portfolio site!
         </Text>
-        <SimpleGrid columns={3} spacing={12}>
+        <SimpleGrid columns={3} spacing={12} mt={8}>
           <Button color='gray.50' colorScheme='gray.50' variant='outline'>
-            Button
+            About
           </Button>
           <Button color='gray.50' colorScheme='gray.50' variant='outline'>
-            Button
+            Work
           </Button>
           <Button color='gray.50' colorScheme='gray.50' variant='outline'>
-            Button
+            Contact
           </Button>
         </SimpleGrid>
       </Box>
