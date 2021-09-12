@@ -10,6 +10,7 @@ export const Layout = ({
   children: any
 }) => {
   return (
+    // TODO: blurを適用する
     <div
       style={{
         backgroundImage: 'url(./bg.jpg)',
