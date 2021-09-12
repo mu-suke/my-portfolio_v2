@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         >
           Welcome to my portfolio site!
         </Text>
-        <SimpleGrid columns={3} spacing={12} mt={8}>
+        <SimpleGrid columns={3} spacing={{ base: 4, md: 12 }} mt={8}>
           <Button color='gray.50' colorScheme='gray.50' variant='outline'>
             About
           </Button>

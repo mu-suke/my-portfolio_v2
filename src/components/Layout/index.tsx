@@ -15,6 +15,7 @@ export const Layout = ({
       style={{
         backgroundImage: 'url(./bg.jpg)',
         backgroundSize: 'cover',
+        backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         height: '100vh',
         display: 'flex',
