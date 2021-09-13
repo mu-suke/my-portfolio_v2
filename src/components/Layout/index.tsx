@@ -1,6 +1,7 @@
 import { Container } from '@chakra-ui/layout'
 import Head from 'next/head'
 import React from 'react'
+import style from '../../styles/Home.module.css'
 
 export const Layout = ({
   title,
@@ -12,16 +13,7 @@ export const Layout = ({
   return (
     // TODO: blurを適用する
     <div
-      style={{
-        backgroundImage: 'url(./bg.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      className={style.root}
     >
       <Head>
         <title>{title ?? 'mu-suke'}</title>
