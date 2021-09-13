@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Text, SimpleGrid, Center } from '@chakra-ui/react'
+import { Avatar, Box, Button, Text, SimpleGrid, Center, Link } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import React from 'react'
 import { Layout } from '../components/Layout'
@@ -26,13 +26,13 @@ const Home: NextPage = () => {
           Welcome to my portfolio site!
         </Text>
         <SimpleGrid columns={3} spacing={{ base: 4, md: 12 }} mt={8}>
-          <Button color='gray.50' colorScheme='gray.50' variant='outline'>
+          <Button color='gray.50' colorScheme='gray.50' variant='outline' as='a' href='/about'>
             About
           </Button>
-          <Button color='gray.50' colorScheme='gray.50' variant='outline'>
+          <Button color='gray.50' colorScheme='gray.50' variant='outline' as='a' href='/work'>
             Work
           </Button>
-          <Button color='gray.50' colorScheme='gray.50' variant='outline'>
+          <Button color='gray.50' colorScheme='gray.50' variant='outline' as='a' href='/contact'>
             Contact
           </Button>
         </SimpleGrid>
