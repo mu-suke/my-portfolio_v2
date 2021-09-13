@@ -1,7 +1,7 @@
 import { Container } from '@chakra-ui/layout'
 import Head from 'next/head'
 import React from 'react'
-import style from '../../styles/Home.module.css'
+import style from '../../styles/Layout.module.css'
 
 export const Layout = ({
   title,
