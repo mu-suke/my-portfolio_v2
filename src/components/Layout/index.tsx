@@ -16,7 +16,7 @@ export const Layout = ({
       className={style.root}
     >
       <Head>
-        <title>{title ?? 'mu-suke'}</title>
+        <title>{`${title} | mu-suke.com` ?? 'mu-suke.com'}</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
