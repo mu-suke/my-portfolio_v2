@@ -11,16 +11,20 @@ export const Layout = ({
   children: any
 }) => {
   return (
-    // TODO: blurを適用する
-    <div
-      className={style.root}
-    >
+    // TODO: 全てChakra UIに置き換える
+    // TODO: styleを使用しない
+    <>
       <Head>
         <title>{`${title} | mu-suke.com` ?? 'mu-suke.com'}</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <Container maxW='container.sm'>{children}</Container>
-    </div>
+      <div
+        className={style.root}
+      >
+        <Container maxW='container.sm'>{children}</Container>
+      </div>
+    </>
   )
 }
