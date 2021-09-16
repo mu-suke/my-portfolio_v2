@@ -1,16 +1,11 @@
 import { Avatar, Box, Button, Center, SimpleGrid, Text } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Motion } from './Layout/Motion'
 
 export const Home = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 1 }}
-    >
+    <Motion>
       <Box w='100%' p={8} shadow='sm' borderWidth='1px' borderColor='gray.50'>
         <Center>
           <Avatar size='xl' name='Yusuke Murakami' src='./icon.png' />
@@ -48,7 +43,7 @@ export const Home = () => {
           </Link>
         </SimpleGrid>
       </Box>
-    </motion.div>
+    </Motion>
   )
 }
 
