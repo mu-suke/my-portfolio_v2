@@ -7,6 +7,7 @@ import Works from '../components/Works'
 import { Layout } from '../components/Layout'
 import withRouter from 'next/dist/client/with-router'
 import Contact from '../components/Contact'
+import { motion } from 'framer-motion'
 
 const Index = () => {
   return (

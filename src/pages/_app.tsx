@@ -1,10 +1,9 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
-import { BrowserRouter } from 'react-router-dom';
 import { extendTheme } from '@chakra-ui/react'
 import React from 'react'
-import Index from '.';
+import { AnimatePresence } from 'framer-motion';
 
 const colors = {
   brand: {
@@ -19,10 +18,12 @@ const theme = extendTheme({ colors })
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <div suppressHydrationWarning>
-        {typeof window === 'undefined' ? null : <Component {...pageProps} />}
-      </div>
-    </ChakraProvider>
+      <AnimatePresence exitBeforeEnter>
+        <div suppressHydrationWarning>
+          {typeof window === 'undefined' ? null : <Component {...pageProps} />}
+        </div>
+      </AnimatePresence>
+    </ChakraProvider >
   )
 }
 export default MyApp
