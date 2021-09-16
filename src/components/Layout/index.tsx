@@ -15,7 +15,7 @@ export const Layout = ({
     // TODO: styleを使用しない
     <>
       <Head>
-        <title>{`${title} | mu-suke.com` ?? 'mu-suke.com'}</title>
+        <title>mu-suke.com</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='shortcut icon' href='/favicon.ico' />

@@ -1,9 +1,10 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter } from 'react-router-dom';
 import { extendTheme } from '@chakra-ui/react'
 import React from 'react'
-import { Layout } from '../components/Layout'
+import Index from '.';
 
 const colors = {
   brand: {
@@ -18,7 +19,9 @@ const theme = extendTheme({ colors })
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
+      <div suppressHydrationWarning>
+        {typeof window === 'undefined' ? null : <Component {...pageProps} />}
+      </div>
     </ChakraProvider>
   )
 }
