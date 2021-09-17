@@ -17,7 +17,6 @@ const About = () => {
   }
   return (
     <Motion>
-
       <Box boxShadow='0rem 0.75rem 2.625rem 0rem rgb(40 39 48 / 52%)' borderRadius="lg" overflow="hidden">
         <Image src={property.imageUrl} alt={property.imageAlt} />
 
