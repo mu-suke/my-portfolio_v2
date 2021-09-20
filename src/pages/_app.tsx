@@ -18,7 +18,7 @@ const theme = extendTheme({ colors })
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <div suppressHydrationWarning>
           {typeof window === 'undefined' ? null : <Component {...pageProps} />}
         </div>
