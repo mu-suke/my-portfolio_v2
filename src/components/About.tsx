@@ -1,12 +1,12 @@
 import { StarIcon } from '@chakra-ui/icons'
-import { Badge, Box, Image } from '@chakra-ui/react'
+import { Badge, Box, Img } from '@chakra-ui/react'
 import React from 'react'
 import { BackButton } from './common/BackButton'
 import { Motion } from './Layout/Motion'
 
 const About = () => {
   const property = {
-    imageUrl: "https://bit.ly/2Z4KKcF",
+    imageUrl: "/about.jpg",
     imageAlt: "Rear view of modern home with pool",
     beds: 3,
     baths: 2,
@@ -18,8 +18,7 @@ const About = () => {
   return (
     <Motion>
       <Box boxShadow='0rem 0.75rem 2.625rem 0rem rgb(40 39 48 / 52%)' borderRadius="lg" overflow="hidden">
-        <Image src={property.imageUrl} alt={property.imageAlt} />
-
+        <Img src={property.imageUrl} alt={property.imageAlt} objectFit="cover" width="100%" height="300" />
         <Box p="6" backgroundColor='rgba(40, 39, 48, 0.922)'>
           <BackButton />
           <Box d="flex" alignItems="baseline">
