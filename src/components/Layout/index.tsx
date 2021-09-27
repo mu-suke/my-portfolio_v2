@@ -23,7 +23,7 @@ export const Layout = ({
       <div
         className={style.root}
       >
-        <Container maxW='container.sm'>{children}</Container>
+        <Container maxW='container.sm' padding="4rem 3rem">{children}</Container>
       </div>
     </>
   )
