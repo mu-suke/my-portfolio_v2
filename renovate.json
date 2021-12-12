@@ -1,5 +1,21 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "baseBranches": [
+    "staging"
+  ],
+  "timezone": "Asia/Tokyo",
+  "schedule": [
+    "every weekend"
+  ],
+  "labels": [
+    "renovate"
+  ],
+  "reviewers": [
+    "mu-suke"
+  ],
+  "reviewersSampleSize": 1,
+  "rangeStrategy": "pin",
+  "prConcurrentLimit": 6
 }
