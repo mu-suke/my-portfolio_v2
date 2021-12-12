@@ -8,5 +8,9 @@ module.exports = {
         destination: '/',
       },
     ]
-  }
+  },
+  i18n: {
+    locales: ['en', 'ja'],
+    defaultLocale: 'ja',
+  },
 }
