@@ -17,5 +17,45 @@
   ],
   "reviewersSampleSize": 1,
   "rangeStrategy": "pin",
-  "prConcurrentLimit": 6
+  "prConcurrentLimit": 6,
+  "packageRules": [
+    {
+      "packageNames": [
+        "node",
+        "npm"
+      ],
+      "enabled": false
+    },
+    {
+      "groupName": "Next.js families",
+      "matchPackagePatterns": [
+        "next"
+      ]
+    },
+    {
+      "groupName": "Linter families",
+      "matchPackagePatterns": [
+        "eslint",
+        "prettier"
+      ]
+    },
+    {
+      "groupName": "React families",
+      "matchPackagePatterns": [
+        "react",
+        "emotion"
+      ],
+      "matchPackageNames": [
+        "@hookform/resolvers"
+      ]
+    },
+    {
+      "groupName": "Typescript families",
+      "matchPackageNames": [
+        "typescript",
+        "tsconfig-paths",
+        "ts-loader"
+      ]
+    }
+  ]
 }
