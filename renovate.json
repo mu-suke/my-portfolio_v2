@@ -20,17 +20,18 @@
   "prConcurrentLimit": 6,
   "packageRules": [
     {
-      "packageNames": [
-        "node",
-        "npm"
-      ],
-      "enabled": false
+      "groupName": "[Auto Merge] minor update",
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "groupName": "[Auto Merge] devDependencies update",
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
     },
     {
       "groupName": "Next.js families",
-      "matchPackagePatterns": [
-        "next"
-      ]
+      "matchPackagePatterns": ["next"]
     },
     {
       "groupName": "Linter families",
@@ -44,9 +45,6 @@
       "matchPackagePatterns": [
         "react",
         "emotion"
-      ],
-      "matchPackageNames": [
-        "@hookform/resolvers"
       ]
     },
     {
