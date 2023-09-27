@@ -1,14 +1,14 @@
 import type { NextPage } from 'next'
 import React from 'react'
-import Home from '@/components/Home'
 import { Layout } from '@/components/Layout'
+import { About as AboutComponent } from '@/components/About'
 
-const Index: NextPage = () => {
+const About: NextPage = () => {
   return (
     <Layout>
-      <Home />
+      <AboutComponent />
     </Layout>
   )
 }
 
-export default Index
+export default About

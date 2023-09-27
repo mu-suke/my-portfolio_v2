@@ -1,11 +1,11 @@
-import { Button } from '@chakra-ui/button'
+import { Button, Link } from '@chakra-ui/react'
 import React from 'react'
 import { ArrowBackIcon } from '@chakra-ui/icons'
-import { Link } from 'react-router-dom'
+import NextLink from 'next/link'
 
-export const BackButton = () => {
+export const BackButton: React.FC = () => {
   return (
-    <Link to='/'>
+    <Link as={NextLink} href='/'>
       <Button
         leftIcon={<ArrowBackIcon />}
         variant='outline'
@@ -18,4 +18,3 @@ export const BackButton = () => {
     </Link>
   )
 }
-
