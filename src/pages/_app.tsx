@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from '@chakra-ui/react'
 import React from 'react'
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion'
 
 const colors = {
   brand: {
@@ -15,15 +15,13 @@ const colors = {
 
 const theme = extendTheme({ colors })
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <AnimatePresence exitBeforeEnter initial={false}>
-        <div suppressHydrationWarning>
-          {typeof window === 'undefined' ? null : <Component {...pageProps} />}
-        </div>
+      <AnimatePresence initial={false}>
+        <Component key={router.asPath} {...pageProps} />
       </AnimatePresence>
-    </ChakraProvider >
+    </ChakraProvider>
   )
 }
 export default MyApp

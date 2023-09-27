@@ -1,20 +1,10 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "baseBranches": [
-    "staging"
-  ],
+  "extends": ["config:base"],
+  "baseBranches": ["staging"],
   "timezone": "Asia/Tokyo",
-  "schedule": [
-    "every weekend"
-  ],
-  "labels": [
-    "renovate"
-  ],
-  "reviewers": [
-    "mu-suke"
-  ],
+  "schedule": ["every weekend"],
+  "labels": ["renovate"],
+  "reviewers": ["mu-suke"],
   "reviewersSampleSize": 1,
   "rangeStrategy": "pin",
   "prConcurrentLimit": 6,
@@ -35,25 +25,15 @@
     },
     {
       "groupName": "Linter families",
-      "matchPackagePatterns": [
-        "eslint",
-        "prettier"
-      ]
+      "matchPackagePatterns": ["eslint", "prettier"]
     },
     {
       "groupName": "React families",
-      "matchPackagePatterns": [
-        "react",
-        "emotion"
-      ]
+      "matchPackagePatterns": ["react", "emotion"]
     },
     {
       "groupName": "Typescript families",
-      "matchPackageNames": [
-        "typescript",
-        "tsconfig-paths",
-        "ts-loader"
-      ]
+      "matchPackageNames": ["typescript", "tsconfig-paths", "ts-loader"]
     }
   ]
 }
