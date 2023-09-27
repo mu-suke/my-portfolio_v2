@@ -1,7 +1,15 @@
-import { Avatar, Box, Button, Center, SimpleGrid, Text } from '@chakra-ui/react'
+import {
+  Avatar,
+  Box,
+  Button,
+  Center,
+  SimpleGrid,
+  Text,
+  Link,
+} from '@chakra-ui/react'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Motion } from './Layout/Motion'
+import { Motion } from '@/components/Layout/Motion'
+import NextLink from 'next/link'
 
 export const Home = () => {
   return (
@@ -26,18 +34,33 @@ export const Home = () => {
           Welcome to my portfolio site!
         </Text>
         <SimpleGrid columns={3} spacing={{ base: 4, md: 12 }} mt={8}>
-          <Link to='about'>
-            <Button color='gray.50' colorScheme='gray.50' variant='outline' width='100%'>
+          <Link as={NextLink} href='/about'>
+            <Button
+              color='gray.50'
+              colorScheme='gray.50'
+              variant='outline'
+              width='100%'
+            >
               About
             </Button>
           </Link>
-          <Link to='/works'>
-            <Button color='gray.50' colorScheme='gray.50' variant='outline' width='100%'>
+          <Link as={NextLink} href='/works'>
+            <Button
+              color='gray.50'
+              colorScheme='gray.50'
+              variant='outline'
+              width='100%'
+            >
               Works
             </Button>
           </Link>
-          <Link to='/contact'>
-            <Button color='gray.50' colorScheme='gray.50' variant='outline' width='100%'>
+          <Link as={NextLink} href='/contact'>
+            <Button
+              color='gray.50'
+              colorScheme='gray.50'
+              variant='outline'
+              width='100%'
+            >
               Contact
             </Button>
           </Link>

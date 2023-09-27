@@ -2,9 +2,9 @@ import { StarIcon } from '@chakra-ui/icons'
 import { Badge, Box, Img } from '@chakra-ui/react'
 import React from 'react'
 import { BackButton } from './common/BackButton'
-import { Motion } from './Layout/Motion'
+import { Motion } from '@/components/Layout/Motion'
 
-const About = () => {
+export const About: React.FC = () => {
   const property = {
     imageUrl: '/about.jpg',
     imageAlt: 'about image',
@@ -31,7 +31,7 @@ const About = () => {
         />
         <Box p='6' backgroundColor='rgba(40, 39, 48, 0.922)'>
           <BackButton />
-          <Box d='flex' alignItems='baseline'>
+          <Box display='flex' alignItems='baseline'>
             <Badge borderRadius='full' px='2' colorScheme='teal'>
               New
             </Badge>
@@ -64,7 +64,7 @@ const About = () => {
             </Box>
           </Box>
 
-          <Box d='flex' mt='2' alignItems='center'>
+          <Box display='flex' mt='2' alignItems='center'>
             {Array(5)
               .fill('')
               .map((_, i) => (
@@ -82,5 +82,3 @@ const About = () => {
     </Motion>
   )
 }
-
-export default About

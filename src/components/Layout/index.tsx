@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/layout'
+import { Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import React from 'react'
 import style from '../../styles/Layout.module.css'
@@ -20,10 +20,10 @@ export const Layout = ({
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
-      <div
-        className={style.root}
-      >
-        <Container maxW='container.sm' padding="4rem 3rem">{children}</Container>
+      <div className={style.root}>
+        <Container maxW='container.sm' padding='4rem 3rem'>
+          {children}
+        </Container>
       </div>
     </>
   )
