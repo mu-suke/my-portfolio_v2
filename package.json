@@ -10,7 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.1.5",
+    "@chakra-ui/icons": "1.1.7",
     "@chakra-ui/react": "2.8.1",
     "@emotion/react": "11.7.1",
     "@emotion/styled": "11.6.0",
